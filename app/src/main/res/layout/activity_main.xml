@@ -35,4 +35,13 @@
         android:layout_toEndOf="@+id/radioButton"
         android:layout_marginStart="46dp"
         android:id="@+id/radioButton2" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="144dp"
+        android:id="@+id/progressBar" />
 </RelativeLayout>
