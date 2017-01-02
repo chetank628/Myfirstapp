@@ -14,26 +14,26 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="This will find Device name ..!"
         android:id="@+id/textView" />
 
-    <RadioButton
-        android:text="RadioButton"
+    <Button
+        android:text="Get Device name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/button_generatelog"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="128dp"
         android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="124dp"
-        android:id="@+id/radioButton" />
+        android:layout_alignParentStart="true" />
 
-    <RadioButton
-        android:text="Testcommitbutton"
+    <Button
+        android:text="Generate logs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/radioButton"
-        android:layout_toEndOf="@+id/radioButton"
-        android:layout_marginStart="46dp"
-        android:id="@+id/radioButton2" />
+        android:id="@+id/button2_logs"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/button_generatelog"
+        android:layout_alignStart="@+id/button_generatelog" />
 
 </RelativeLayout>
