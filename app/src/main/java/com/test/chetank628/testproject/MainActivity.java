@@ -16,7 +16,9 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
-Button b,logs;
+       Button b,logs;
+      String cpuid=null;
+       int cores;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +35,7 @@ Button b,logs;
            BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         final String name = mBluetoothAdapter.getName();
 
-        if(deviceName==Build.MODEL) {   // inner class
+        if(deviceName.equals(Build.MODEL)) {   // inner class
             b.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -55,7 +57,9 @@ Button b,logs;
         try {
             Process proc = Runtime.getRuntime().exec("cat /proc/cpuinfo");
             InputStream is = proc.getInputStream();
-           final  String cpuid =is.toString();
+            cores= Runtime.getRuntime().availableProcessors();
+              System.out.print(cores);
+            cpuid =is.toString();
 
 
         }
@@ -71,7 +75,8 @@ Button b,logs;
                 Log.v("model", Build.MODEL);
                 Log.v("ID",Build.ID);
                 Log.v("Board",Build.BOARD);
-               // Log.v("CPU",cpuid);
+                //Log.v("CPU",cpuid);
+                //Log.v("No of cores", );
 
             }
         });
