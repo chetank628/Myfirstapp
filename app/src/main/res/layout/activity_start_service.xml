@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="QualityKiosk "
-        android:textColor="#ff871f19"
+        android:textColor="#1a237e"
         android:textSize="30dp"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
