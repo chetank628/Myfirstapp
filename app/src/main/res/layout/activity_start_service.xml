@@ -17,7 +17,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Example of services"
+        android:text="To start and  stop services"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="30dp" />
@@ -49,9 +49,9 @@
         android:text="Stop Services"
         android:id="@+id/button_stopservice"
         android:onClick="stopService"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="39dp"
         android:layout_below="@+id/button2_startservice"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignEnd="@+id/button2_startservice" />
 
 
 </RelativeLayout>
