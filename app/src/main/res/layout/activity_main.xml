@@ -30,16 +30,6 @@
         android:layout_alignEnd="@+id/button2_logs"
         android:layout_alignStart="@+id/button2_logs" />
 
-    <Button
-        android:text="Get Real Device name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_generatelog"
-        android:layout_marginStart="107dp"
-        android:layout_above="@+id/button2_logs"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="48dp" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,5 +37,14 @@
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/button_generatelog" />
+
+    <Button
+        android:text="Get Reel Device name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_generatelog"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/button2_logs"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
