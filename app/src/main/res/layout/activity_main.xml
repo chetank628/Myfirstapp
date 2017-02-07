@@ -31,7 +31,7 @@
         android:layout_alignStart="@+id/button2_logs" />
 
     <Button
-        android:text="Get Device name"
+        android:text="Get Real Device name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button_generatelog"
