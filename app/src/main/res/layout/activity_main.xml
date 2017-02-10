@@ -12,15 +12,6 @@
     tools:context="com.test.chetank628.testproject.MainActivity">
 
     <Button
-        android:text="Generate logs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2_logs"
-        android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/button_generatelog"
-        android:layout_alignStart="@+id/button_generatelog" />
-
-    <Button
         android:text="Active process"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,7 +24,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This will find Device name ..!"
+        android:text="This will find  Real Device name ..!"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/button_generatelog" />
@@ -45,6 +36,16 @@
         android:id="@+id/button_generatelog"
         android:layout_marginBottom="34dp"
         android:layout_above="@+id/button2_logs"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:elevation="0dp" />
+
+    <Button
+        android:text="Generate logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2_logs"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/button_generatelog"
+         />
 
 </RelativeLayout>

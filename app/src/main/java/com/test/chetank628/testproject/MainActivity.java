@@ -46,13 +46,14 @@ public class MainActivity extends AppCompatActivity {
 
            BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         final String name = mBluetoothAdapter.getName();
+        final String[] friendlyname = new String[1];
 
         if(deviceName.equals(Build.MODEL)) {   // inner class
             b.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Toast.makeText(MainActivity.this, name, Toast.LENGTH_LONG).show();
-
+                    friendlyname[0]=name;
                 }
             });
         }
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Toast.makeText(MainActivity.this,deviceName,Toast.LENGTH_LONG).show();
+                    friendlyname[0] =deviceName;
 
                 }
             });}
@@ -82,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         logs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v("devicename",deviceName);
+                Log.v("devicename",friendlyname[0]);
                 Log.v("manufactures",android.os.Build.MANUFACTURER);
                 Log.v("model", Build.MODEL);
                 Log.v("ID",Build.ID);
